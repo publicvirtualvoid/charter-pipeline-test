@@ -4,6 +4,7 @@ set -x
 # deactivate
 rm -rf test-env
 python3 -m venv test-env
+source test-env/bin/activate
 pip install --no-cache-dir -r requirements.txt
 pip cache purge
 python clean-venv.py test-env > clean_output.txt
